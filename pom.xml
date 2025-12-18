@@ -28,6 +28,18 @@
             <artifactId>spring-web</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+		<distributionManagement>
+		 <snapshotRepository>
+		    <id>nexusRepo</id>
+		    <url>http://34.208.218.12:8081/repository/sample-snapshots/</url>
+		 </snapshotRepository>
+		
+		<repository>
+		    <id>nexusRepo</id>
+		    <url>http://44.210.238.199:8081/repository/myrepo/</url>
+		</repository>
+  	</distributionManagement>
 	    
         <dependency>
             <groupId>org.springframework</groupId>
